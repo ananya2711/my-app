@@ -1,3 +1,4 @@
+// Format and display of api outputs
 import React from "react";
 import "../styles/QueryItem.css";
 

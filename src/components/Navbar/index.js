@@ -1,6 +1,6 @@
+// Navbar creation
 import React from "react";
-import { Nav, NavLink, NavMenu }
-  from "./NavbarElements";
+import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
 const Navbar = () => {
   return (
@@ -18,7 +18,18 @@ const Navbar = () => {
           >
             H
           </p>
-          <span style={{ textAlign: "center", width: "90%", color: "#F2E7D5", alignContent: "center", alignSelf: "center" }}> Hacker News Mini Clone</span>
+          <span
+            style={{
+              textAlign: "center",
+              width: "90%",
+              color: "#F2E7D5",
+              alignContent: "center",
+              alignSelf: "center",
+            }}
+          >
+            {" "}
+            Hacker News Mini Clone
+          </span>
           <NavLink to="/" activeStyle>
             Main
           </NavLink>

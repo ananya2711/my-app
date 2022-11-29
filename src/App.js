@@ -1,3 +1,4 @@
+// enable routing for differnt pages in application
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";

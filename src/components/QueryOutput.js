@@ -1,3 +1,4 @@
+// Rendering of query output
 import React from "react";
 import QueryItem from "./QueryItem";
 import "../styles/QueryOutput.css";

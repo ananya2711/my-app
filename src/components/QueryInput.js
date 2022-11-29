@@ -1,3 +1,4 @@
+// Creation of search bar and filter options
 import React, { useEffect } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import TuneIcon from "@mui/icons-material/Tune";
