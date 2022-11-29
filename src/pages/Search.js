@@ -11,7 +11,7 @@ function App() {
   
   const fetchQuery = () => {
     fetch(
-      `https://hn.algolia.com/api/v1/search?query=${query}&tags=${selectState}&hitsPerPage=100`
+      `https://hn.algolia.com/api/v1/search?query=${query}&tags=${selectState}&hitsPerPage=300`
     )
       .then((response) => response.json())
       .then((r) => {
@@ -22,7 +22,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch(`http://hn.algolia.com/api/v1/search?query=`)
+    fetch(`http://hn.algolia.com/api/v1/search?query=""&hitsPerPage=300`)
       .then((response) => response.json())
       .then((r) => {
         setresult((p) => {
