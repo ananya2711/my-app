@@ -4,17 +4,17 @@
 Hosted Link : [https://ananyahackernewsclone.netlify.app/]
 
 ### Application details:
-A simple clone with the following features of the Hacker News website 
+A simple clone with the following features of the Hacker News website <br />
 - New stories page 
-here all the stories are ordered by the newest to oldest with pagination 
+here all the stories are ordered by the newest to oldest with pagination<br /> 
 - Search page 
-The Search page has three filters 
+The Search page has three filters <br />
 - Stories 
 - Popularity 
 - Time 
 
-However, Popularity and Time do not have supported APIs, as given here: 
-- Hacker news API :[https://hn.algolia.com/api]
+However, Popularity and Time do not have supported APIs, as given here<br />
+Hacker news API :[https://hn.algolia.com/api]
 
 ### npm start
 
