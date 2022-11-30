@@ -13,7 +13,7 @@ function Story() {
   const handleChange = (event, value) => {
     setPage(value);
     fetch(
-      `http://hn.algolia.com/api/v1/search_by_date?query=${
+      `https://hn.algolia.com/api/v1/search_by_date?query=${
         query - 1
       }&hitsPerPage=20&page=${page}`
     )
@@ -37,8 +37,10 @@ function Story() {
 
   // load inital data on page load
   useEffect(() => {
+    console.log("useEffect");
+    
     fetch(
-      `http://hn.algolia.com/api/v1/search_by_date?query=${query}&hitsPerPage=20&page=${
+      `https://hn.algolia.com/api/v1/search_by_date?query=${query}&hitsPerPage=20&page=${
         page - 1
       }`
     )
@@ -51,13 +53,13 @@ function Story() {
   }, []);
   return (
     <div className="App" style={{ backgroundColor: "#F2E7D5" }}>
+      {console.log(result)}
       <QueryOutput
         result={result}
         query={query}
         setresult={setresult}
         stateInfo={selectState}
       />
-
       <div
         style={{
           display: "flex",
